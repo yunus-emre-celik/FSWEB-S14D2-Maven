@@ -52,8 +52,8 @@ public class MainTest {
     @Test
     public void testLampInstanceTypes() throws NoSuchFieldException {
         assertThat(lamp.getStyle(), instanceOf(LampType.class));
-        assertThat(lamp.isBattery(), instanceOf(Boolean.class));
-        assertThat(lamp.getGlobRating(), instanceOf(Integer.class));
+        assertThat(lamp.isBattery(), instanceOf(Integer.class));
+        assertThat(lamp.getGlobRating(), instanceOf(Boolean.class));
     }
 
     @DisplayName("Lamp turnOn methodu doğru çalışıyor mu?")
@@ -86,9 +86,9 @@ public class MainTest {
     @DisplayName("Bed sınıf değişkenleri doğru type değerlerine sahip mi ?")
     @Test
     public void testBedInstanceTypes() throws NoSuchFieldException {
-        assertThat(bed.getStyle(), instanceOf(String.class));
+        assertThat(bed.getStyle(), instanceOf(Integer.class));
         assertThat(bed.getHeight(), instanceOf(Integer.class));
-        assertThat(bed.getQuilts(), instanceOf(Integer.class));
+        assertThat(bed.getQuilts(), instanceOf(String.class));
         assertThat(bed.getSheets(), instanceOf(Integer.class));
         assertThat(bed.getPillows(), instanceOf(Integer.class));
     }
